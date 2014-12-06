@@ -1,0 +1,9 @@
+For i = 0 To Taille - 1
+            Caractere = Chaine.Substring(i, 1)      'Substring remplace la fonctions mid$ de vb6
+            If Asc(Caractere) = 32 Then             'Asc renvoi le Code ASCII du Caractère testé
+                Espace = Espace + 1
+            End If
+            If Asc(Caractere) > 64 And Asc(Caractere) < 91 Then
+                Majuscules = Majuscules + 1
+            End If
+Next
